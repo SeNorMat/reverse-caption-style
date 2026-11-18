@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse Caption Style"
+  short_description: "Measure and reuse the captions in a reference video"
+  default_prompt: "Use $reverse-caption-style to measure the captions in my reference video and produce an editable preset."

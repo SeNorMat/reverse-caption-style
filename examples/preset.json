@@ -1,0 +1,32 @@
+{
+  "name": "reference captions",
+  "x": 0.4984,
+  "y": 0.5,
+  "animation": "phrase",
+  "roles": {
+    "normal": {
+      "font": "Helvetica",
+      "bold": true,
+      "italic": false,
+      "size": 0.05646,
+      "color": "#fbf5e8",
+      "tracking": 0.00113
+    },
+    "emphasis": {
+      "font": "Georgia",
+      "bold": false,
+      "italic": true,
+      "size": 0.08163,
+      "color": "#fcc473",
+      "tracking": -0.00028
+    },
+    "hero": {
+      "font": "Georgia",
+      "bold": false,
+      "italic": true,
+      "size": 0.09233,
+      "color": "#fcc473",
+      "tracking": -0.00073
+    }
+  }
+}

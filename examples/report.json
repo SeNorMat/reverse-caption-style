@@ -1,0 +1,133 @@
+{
+  "sample_times": [
+    0.112,
+    0.22,
+    0.728,
+    1.456,
+    1.65,
+    2.184,
+    2.912,
+    3.64,
+    4.368,
+    5.096,
+    5.824,
+    6.552,
+    7.28
+  ],
+  "sample_width": 640,
+  "sample_height": 800,
+  "duration": 7.5,
+  "roi": null,
+  "focus_times": [],
+  "status": "sampled",
+  "band": [
+    0.4375,
+    0.57
+  ],
+  "frames_with_text": 13,
+  "fitted_words": 23,
+  "style_support": {
+    "alternate_fill_samples": 6,
+    "larger_type_samples": 6,
+    "italic_alternate_samples": 4,
+    "primary_ink_samples": 16
+  },
+  "motion": {
+    "seconds_sampled": 2.7,
+    "observations": [],
+    "confidence": "limited"
+  },
+  "median_glyph_overlap": 0.781,
+  "samples": [
+    {
+      "time": 2.912,
+      "text": "it",
+      "font_guess": "Helvetica",
+      "size": 0.0574,
+      "score": 0.851
+    },
+    {
+      "time": 3.64,
+      "text": "Give",
+      "font_guess": "Helvetica",
+      "size": 0.0563,
+      "score": 0.84
+    },
+    {
+      "time": 0.112,
+      "text": "Start",
+      "font_guess": "Helvetica",
+      "size": 0.0563,
+      "score": 0.801
+    },
+    {
+      "time": 5.096,
+      "text": "idea",
+      "font_guess": "Helvetica",
+      "size": 0.0574,
+      "score": 0.8
+    },
+    {
+      "time": 4.368,
+      "text": "the",
+      "font_guess": "Helvetica",
+      "size": 0.0563,
+      "score": 0.796
+    },
+    {
+      "time": 6.552,
+      "text": "Leave",
+      "font_guess": "Helvetica",
+      "size": 0.0574,
+      "score": 0.795
+    },
+    {
+      "time": 0.112,
+      "text": "with",
+      "font_guess": "Arial",
+      "size": 0.0574,
+      "score": 0.795
+    },
+    {
+      "time": 6.552,
+      "text": "room",
+      "font_guess": "Arial",
+      "size": 0.0556,
+      "score": 0.794
+    },
+    {
+      "time": 6.552,
+      "text": "for",
+      "font_guess": "Helvetica",
+      "size": 0.0563,
+      "score": 0.794
+    },
+    {
+      "time": 2.912,
+      "text": "some",
+      "font_guess": "Helvetica",
+      "size": 0.0556,
+      "score": 0.793
+    },
+    {
+      "time": 5.096,
+      "text": "the",
+      "font_guess": "Helvetica",
+      "size": 0.0542,
+      "score": 0.785
+    },
+    {
+      "time": 4.368,
+      "text": "Keep",
+      "font_guess": "Helvetica",
+      "size": 0.0567,
+      "score": 0.781
+    }
+  ],
+  "limitations": [
+    "Font families are closest installed candidates. Size and tracking are fitted approximations.",
+    "A role with no observed alternate borrows the normal style. Sparse motion samples can miss short animations.",
+    "Outlines, shadows, plates, karaoke masks and gradients require visual review."
+  ],
+  "elapsed_seconds": 4.94
+}

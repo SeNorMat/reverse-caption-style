@@ -1,0 +1,39 @@
+name: Check the example
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install media tools and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg tesseract-ocr tesseract-ocr-eng fontconfig fonts-dejavu-core
+          python -m pip install -r requirements.txt
+      - name: Analyze sample and check outputs
+        run: |
+          python scripts/analyze.py examples/reference.mp4 --out caption-study
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+
+          study = Path("caption-study")
+          preset = json.loads((study / "preset.json").read_text())
+          report = json.loads((study / "report.json").read_text())
+          assert report["status"] == "sampled"
+          assert report["frames_with_text"] >= 2
+          assert set(preset["roles"]) == {"normal", "emphasis", "hero"}
+          assert abs(preset["x"] - 0.5) < 0.15
+          assert 0 <= preset["y"] <= 1
+          assert all(role["size"] > 0 for role in preset["roles"].values())
+          with Image.open(study / "preview.jpg") as preview:
+              preview.verify()
+          PY
