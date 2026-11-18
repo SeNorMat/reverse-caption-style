@@ -77,3 +77,7 @@ The region is `x,y,width,height` as fractions of the **displayed** frame, from t
 - **DaVinci Resolve** can use an overlay rendered by your caption editor. The preset is a JSON style description, with no Resolve plugin or installer bundled.
 
 Font names are the closest installed matches. A role with little visual evidence can inherit the regular style. Review short animations, outlines, shadows, gradients and karaoke effects against the sampled frames. Each study may include visible text and image crops from its input.
+
+## License
+
+Released under the [MIT License](LICENSE).
